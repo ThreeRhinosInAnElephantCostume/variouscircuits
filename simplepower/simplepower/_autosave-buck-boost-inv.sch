@@ -1,0 +1,507 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1000 1400 0    50   Input ~ 0
+V_IN
+$Comp
+L Device:R_US R?
+U 1 1 61469AF1
+P 4350 1700
+F 0 "R?" H 4418 1746 50  0000 L CNN
+F 1 "8.2kR" H 4418 1655 50  0000 L CNN
+F 2 "" V 4390 1690 50  0001 C CNN
+F 3 "~" H 4350 1700 50  0001 C CNN
+	1    4350 1700
+	0    1    1    0   
+$EndComp
+Connection ~ 3750 1400
+Wire Wire Line
+	3750 1400 4100 1400
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:2N3904 Q?
+U 1 1 6146D338
+P 4700 1800
+F 0 "Q?" V 5047 1800 60  0000 C CNN
+F 1 "2N3904" V 4941 1800 60  0000 C CNN
+F 2 "digikey-footprints:TO-92-3" H 4900 2000 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 4900 2100 60  0001 L CNN
+F 4 "2N3904CS-ND" H 4900 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N3904" H 4900 2300 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4900 2400 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 4900 2500 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 4900 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N3904/2N3904CS-ND/4806876" H 4900 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V TO-92" H 4900 2800 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 4900 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4900 3000 60  0001 L CNN "Status"
+	1    4700 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 6147327F
+P 3750 1250
+F 0 "D?" V 3796 1170 50  0000 R CNN
+F 1 "51V TVS" V 3705 1170 50  0000 R CNN
+F 2 "" H 3750 1250 50  0001 C CNN
+F 3 "~" H 3750 1250 50  0001 C CNN
+	1    3750 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61477283
+P 3750 1100
+F 0 "#PWR?" H 3750 850 50  0001 C CNN
+F 1 "GND" H 3755 927 50  0000 C CNN
+F 2 "" H 3750 1100 50  0001 C CNN
+F 3 "" H 3750 1100 50  0001 C CNN
+	1    3750 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6147B7F7
+P 4900 1700
+F 0 "#PWR?" H 4900 1450 50  0001 C CNN
+F 1 "GND" H 4905 1527 50  0000 C CNN
+F 2 "" H 4900 1700 50  0001 C CNN
+F 3 "" H 4900 1700 50  0001 C CNN
+	1    4900 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6147CA29
+P 4700 2150
+F 0 "R?" H 4768 2196 50  0000 L CNN
+F 1 "10kR" H 4768 2105 50  0000 L CNN
+F 2 "" V 4740 2140 50  0001 C CNN
+F 3 "~" H 4700 2150 50  0001 C CNN
+	1    4700 2150
+	-1   0    0    1   
+$EndComp
+Text HLabel 4700 2300 0    50   Input ~ 0
+DRV_BBI
+$Comp
+L Device:L L?
+U 1 1 6147E0F1
+P 5250 1650
+F 0 "L?" H 5303 1696 50  0000 L CNN
+F 1 "L" H 5303 1605 50  0000 L CNN
+F 2 "" H 5250 1650 50  0001 C CNN
+F 3 "~" H 5250 1650 50  0001 C CNN
+	1    5250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6147F951
+P 5250 1800
+F 0 "#PWR?" H 5250 1550 50  0001 C CNN
+F 1 "GND" H 5255 1627 50  0000 C CNN
+F 2 "" H 5250 1800 50  0001 C CNN
+F 3 "" H 5250 1800 50  0001 C CNN
+	1    5250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F?
+U 1 1 614810FA
+P 1600 1400
+F 0 "F?" V 1375 1400 50  0000 C CNN
+F 1 "5A" V 1466 1400 50  0000 C CNN
+F 2 "" H 1650 1200 50  0001 L CNN
+F 3 "~" H 1600 1400 50  0001 C CNN
+	1    1600 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 61486E58
+P 1850 1550
+F 0 "C?" H 1968 1596 50  0000 L CNN
+F 1 "1mF" H 1968 1505 50  0000 L CNN
+F 2 "" H 1888 1400 50  0001 C CNN
+F 3 "~" H 1850 1550 50  0001 C CNN
+	1    1850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1400 1750 1400
+Connection ~ 1850 1400
+$Comp
+L Device:D_Zener D?
+U 1 1 61488EA2
+P 1850 1250
+F 0 "D?" V 1896 1170 50  0000 R CNN
+F 1 "24V" V 1805 1170 50  0000 R CNN
+F 2 "" H 1850 1250 50  0001 C CNN
+F 3 "~" H 1850 1250 50  0001 C CNN
+	1    1850 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61488EA8
+P 1850 1100
+F 0 "#PWR?" H 1850 850 50  0001 C CNN
+F 1 "GND" H 1855 927 50  0000 C CNN
+F 2 "" H 1850 1100 50  0001 C CNN
+F 3 "" H 1850 1100 50  0001 C CNN
+	1    1850 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5822 D?
+U 1 1 61499659
+P 5700 1400
+F 0 "D?" H 5700 1617 50  0000 C CNN
+F 1 "1N5822" H 5700 1526 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5700 1225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5700 1400 50  0001 C CNN
+	1    5700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1400 5250 1400
+Wire Wire Line
+	5250 1500 5250 1400
+Connection ~ 5250 1400
+Wire Wire Line
+	5250 1400 5550 1400
+Wire Wire Line
+	5850 1400 6000 1400
+$Comp
+L power:GND #PWR?
+U 1 1 614A3384
+P 1850 1700
+F 0 "#PWR?" H 1850 1450 50  0001 C CNN
+F 1 "GND" H 1855 1527 50  0000 C CNN
+F 2 "" H 1850 1700 50  0001 C CNN
+F 3 "" H 1850 1700 50  0001 C CNN
+	1    1850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614A3A36
+P 2250 1550
+F 0 "C?" H 2365 1596 50  0000 L CNN
+F 1 "10uF" H 2365 1505 50  0000 L CNN
+F 2 "" H 2288 1400 50  0001 C CNN
+F 3 "~" H 2250 1550 50  0001 C CNN
+	1    2250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1400 2250 1400
+Connection ~ 2250 1400
+Wire Wire Line
+	1850 1700 2250 1700
+Connection ~ 1850 1700
+Connection ~ 2250 1700
+$Comp
+L Device:C C?
+U 1 1 614A6D15
+P 2650 1550
+F 0 "C?" H 2765 1596 50  0000 L CNN
+F 1 "1uF" H 2765 1505 50  0000 L CNN
+F 2 "" H 2688 1400 50  0001 C CNN
+F 3 "~" H 2650 1550 50  0001 C CNN
+	1    2650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1400 2650 1400
+Wire Wire Line
+	2250 1700 2650 1700
+$Comp
+L Device:R_US R?
+U 1 1 614BABDD
+P 8050 1550
+F 0 "R?" H 7982 1504 50  0000 R CNN
+F 1 "2.2kR 1W" H 7982 1595 50  0000 R CNN
+F 2 "" V 8090 1540 50  0001 C CNN
+F 3 "~" H 8050 1550 50  0001 C CNN
+	1    8050 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 614BE6AA
+P 9350 2750
+F 0 "R?" H 9282 2704 50  0000 R CNN
+F 1 "1kR" H 9282 2795 50  0000 R CNN
+F 2 "" V 9390 2740 50  0001 C CNN
+F 3 "~" H 9350 2750 50  0001 C CNN
+	1    9350 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 614C8EE4
+P 3750 1550
+F 0 "R?" H 3682 1504 50  0000 R CNN
+F 1 "12kR" H 3682 1595 50  0000 R CNN
+F 2 "" V 3790 1540 50  0001 C CNN
+F 3 "~" H 3750 1550 50  0001 C CNN
+	1    3750 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRF9540NPBF Q?
+U 1 1 61460ECA
+P 4300 1400
+F 0 "Q?" V 4567 1400 60  0000 C CNN
+F 1 "IRF9540NPBF" V 4461 1400 60  0000 C CNN
+F 2 "digikey-footprints:TO-220-3" H 4500 1600 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irf9540npbf.pdf?fileId=5546d462533600a401535611cfa21dc8" H 4500 1700 60  0001 L CNN
+F 4 "IRF9540NPBF-ND" H 4500 1800 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRF9540NPBF" H 4500 1900 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4500 2000 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4500 2100 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irf9540npbf.pdf?fileId=5546d462533600a401535611cfa21dc8" H 4500 2200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRF9540NPBF/IRF9540NPBF-ND/812088" H 4500 2300 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 100V 23A TO-220AB" H 4500 2400 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4500 2500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4500 2600 60  0001 L CNN "Status"
+	1    4300 1400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4200 1700 3750 1700
+Connection ~ 4200 1700
+$Comp
+L Device:CP C?
+U 1 1 614F80DD
+P 6000 1550
+F 0 "C?" H 6118 1596 50  0000 L CNN
+F 1 "100uF 50V" H 6118 1505 50  0000 L CNN
+F 2 "" H 6038 1400 50  0001 C CNN
+F 3 "~" H 6000 1550 50  0001 C CNN
+	1    6000 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 61504F0C
+P 6000 1250
+F 0 "D?" V 6046 1170 50  0000 R CNN
+F 1 "24V" V 5955 1170 50  0000 R CNN
+F 2 "" H 6000 1250 50  0001 C CNN
+F 3 "~" H 6000 1250 50  0001 C CNN
+	1    6000 1250
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61504F12
+P 6000 1100
+F 0 "#PWR?" H 6000 850 50  0001 C CNN
+F 1 "GND" H 6005 927 50  0000 C CNN
+F 2 "" H 6000 1100 50  0001 C CNN
+F 3 "" H 6000 1100 50  0001 C CNN
+	1    6000 1100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6152520A
+P 6950 1700
+F 0 "#PWR?" H 6950 1450 50  0001 C CNN
+F 1 "GND" H 6955 1527 50  0000 C CNN
+F 2 "" H 6950 1700 50  0001 C CNN
+F 3 "" H 6950 1700 50  0001 C CNN
+	1    6950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6154B214
+P 8050 1700
+F 0 "#PWR?" H 8050 1450 50  0001 C CNN
+F 1 "GND" H 8055 1527 50  0000 C CNN
+F 2 "" H 8050 1700 50  0001 C CNN
+F 3 "" H 8050 1700 50  0001 C CNN
+	1    8050 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 1400
+$Comp
+L Device:CP C?
+U 1 1 61571082
+P 6650 1550
+F 0 "C?" H 6768 1596 50  0000 L CNN
+F 1 "100uF 50V" H 6768 1505 50  0000 L CNN
+F 2 "" H 6688 1400 50  0001 C CNN
+F 3 "~" H 6650 1550 50  0001 C CNN
+	1    6650 1550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6000 1400 7700 1400
+$Comp
+L Device:C C?
+U 1 1 61579BB9
+P 7300 1550
+F 0 "C?" H 7415 1596 50  0000 L CNN
+F 1 "10uF" H 7415 1505 50  0000 L CNN
+F 2 "" H 7338 1400 50  0001 C CNN
+F 3 "~" H 7300 1550 50  0001 C CNN
+	1    7300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61579BBF
+P 7700 1550
+F 0 "C?" H 7815 1596 50  0000 L CNN
+F 1 "1uF" H 7815 1505 50  0000 L CNN
+F 2 "" H 7738 1400 50  0001 C CNN
+F 3 "~" H 7700 1550 50  0001 C CNN
+	1    7700 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1700 6950 1700
+Connection ~ 6650 1700
+Wire Wire Line
+	6650 1700 6000 1700
+Wire Wire Line
+	7300 1700 7700 1700
+Connection ~ 7300 1700
+Wire Wire Line
+	7700 1400 8050 1400
+Connection ~ 7700 1400
+$Comp
+L Isolator:PC817 U?
+U 1 1 6159876E
+P 9250 2300
+F 0 "U?" V 9296 2120 50  0000 R CNN
+F 1 "PC817" V 9205 2120 50  0000 R CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 9050 2100 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 9250 2300 50  0001 L CNN
+	1    9250 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q?
+U 1 1 6159F187
+P 9350 1500
+F 0 "Q?" V 9692 1500 50  0000 C CNN
+F 1 "IRF3205" V 9601 1500 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9600 1425 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 9350 1500 50  0001 L CNN
+	1    9350 1500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8050 1400 8900 1400
+Connection ~ 8050 1400
+$Comp
+L Device:R_US R?
+U 1 1 615AACFE
+P 9000 1550
+F 0 "R?" H 9068 1596 50  0000 L CNN
+F 1 "12kR" H 9068 1505 50  0000 L CNN
+F 2 "" V 9040 1540 50  0001 C CNN
+F 3 "~" H 9000 1550 50  0001 C CNN
+	1    9000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 615B487A
+P 9350 1850
+F 0 "R?" H 9282 1804 50  0000 R CNN
+F 1 "12kR" H 9282 1895 50  0000 R CNN
+F 2 "" V 9390 1840 50  0001 C CNN
+F 3 "~" H 9350 1850 50  0001 C CNN
+	1    9350 1850
+	-1   0    0    1   
+$EndComp
+Connection ~ 9000 1400
+Wire Wire Line
+	9000 1400 9150 1400
+Connection ~ 9350 1700
+Wire Wire Line
+	9000 1700 9350 1700
+Wire Wire Line
+	9550 1400 10000 1400
+Text HLabel 10000 1400 2    50   Input ~ 0
+OUTPUT-
+$Comp
+L power:GND #PWR?
+U 1 1 615CB5AE
+P 8950 2000
+F 0 "#PWR?" H 8950 1750 50  0001 C CNN
+F 1 "GND" H 8955 1827 50  0000 C CNN
+F 2 "" H 8950 2000 50  0001 C CNN
+F 3 "" H 8950 2000 50  0001 C CNN
+	1    8950 2000
+	0    1    1    0   
+$EndComp
+Connection ~ 6950 1700
+Wire Wire Line
+	6950 1700 6650 1700
+Wire Wire Line
+	8950 2000 9150 2000
+$Comp
+L power:GND #PWR?
+U 1 1 615DB1DD
+P 9350 2900
+F 0 "#PWR?" H 9350 2650 50  0001 C CNN
+F 1 "GND" H 9355 2727 50  0000 C CNN
+F 2 "" H 9350 2900 50  0001 C CNN
+F 3 "" H 9350 2900 50  0001 C CNN
+	1    9350 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 9150 2600 3    50   Input ~ 0
+SET_OUTPUT-
+Connection ~ 2650 1400
+Wire Wire Line
+	2650 1400 3750 1400
+$Comp
+L Device:D_Zener D?
+U 1 1 61612D10
+P 8900 1250
+F 0 "D?" V 8946 1170 50  0000 R CNN
+F 1 "51V TVS" V 8855 1170 50  0000 R CNN
+F 2 "" H 8900 1250 50  0001 C CNN
+F 3 "~" H 8900 1250 50  0001 C CNN
+	1    8900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61612D16
+P 8900 1100
+F 0 "#PWR?" H 8900 850 50  0001 C CNN
+F 1 "GND" H 8905 927 50  0000 C CNN
+F 2 "" H 8900 1100 50  0001 C CNN
+F 3 "" H 8900 1100 50  0001 C CNN
+	1    8900 1100
+	-1   0    0    1   
+$EndComp
+Connection ~ 8900 1400
+Wire Wire Line
+	8900 1400 9000 1400
+Text HLabel 8050 1400 1    50   Input ~ 0
+PRE_OUTPUT-
+Wire Wire Line
+	1000 1400 1450 1400
+$EndSCHEMATC
